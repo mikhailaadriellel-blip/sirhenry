@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>HAPPY TEACHER'S DAY, SIR HENRY!</title>
+<style>
+body {
+background-color: #D9E7F8;
+color: #D9E7F8;
+font-family: "Times New Roman", serif;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+.page {
+min-height: 100vh;
+box-sizing: border-box;
+padding: 100px 25px;
+}
+h1 {
+font-size: 45px;
+margin-bottom: 25px;
+}
+p {
+font-size: 21px;
+line-height: 1.6;
+}
+.welcome-box {
+background-color: #6371A2;
+max-width: 700px;
+padding: 50px 30px;
+margin: auto;
+border: 3px solid #56021E;
+border-radius: 15px;
+}
+.welcome-box h1 {
+color: #56021E;
+}
+.button {
+background-color: #D9E7F8;
+color: #56021E;
+padding: 15px 35px;
+border: none;
+border-radius: 8px;
+font-size: 20px;
+font-family: "Times New Roman:, serif;
+cursor: pointer;
+margin-top: 20px;
+}
+.button:hover {
+background-color:#56021E;
+}
+#secondPage {
+display: none;
+}
+.letter {
+background-color: #6371A2;
+color: #56021E;
+max-width: 750px;
+margin: auto;
+padding: 45px;
+border: 3px solid #56021E;
+border-radius: 15px;
+text-align: left;
+}
+.letter h2 {
+text-align: center;
+font-size: 32px;
+margin-bottom: 35px;
+}
+.letter p {
+font-size: 19px;
+line-height: 1.8;
+}
+.signature {
+margin-top: 30px;
+}
+.back-button {
+background-color: #D9E7F8;
+color: #6371A2;
+border: none;
+padding: 12px 25px;
+font-family: "Times New Roman", serif;
+font-size: 17px;
+border-radius: 8px;
+cursor: pointer;
+display: block;
+margin: 30px auto 0;
+}
+</style>
+</head>
+<body>
+<!-- FIRST PAGE-->
+<div id="firstPage" class="page">
+<div class="welcome-box">
+<h1>Hello, welcome sir Henry!</h1>
+<p>October 5, 2026</p>
+<p>Click the button below</p>
+<button class="button" onclick="openLetter()">
+Open your surprise
+</button>
+</div>
+</div>
+<!-- SECOND PAGE -->
+<div id="secondPage" class="page">
+<div class="letter">
+<h1>Happy Teacher's Day!</h1>
+
+<p>To our DMC teacher,</p>
+<p>Honestly sir, hindi 'ko po talaga ine-expect na magugustuhan 'ko ng ganito yung coding kasi sir nung una, phobia 'ko po 'to eh HAHAHA kasi parang ang sakit sa mata sir nung una pero nung pinag discuss mo na po na realize 'ko na hindi naman po pala siya mahirap intindihin. Kayo po yung isa sa reason kung ba't na-inspire ako mag-code to the point po na kapag may bago po akong natututunan na code, gusto 'ko na po agad gumawa ng sarili 'kong projects. Na-realize 'ko rin sa'yo sir na kaya 'ko rin palang gumawa ng someting from nothing.</p>
+<p>Minsan po, nakakatakot ang mga blank pages sa notepad kasi kapag sabog po isip 'ko, hindi 'ko po agad alam kung paano magsisimula. One thing that I learned from coding sir, is patience po talaga.</p>
+<p>Because not everything works on the first attempt. There could be errors, expected colons/semicolon/etc., at kahit po medyo mahirap mag adjust ng code kapag nagkakamali ako, never 'ko pa po pinag shut down laptop 'ko nang walang natatapos na code.</p>
+<p>Para sa'kin sir, coding became my personal hobby and i'm glad po that i'm able to discover it this school year kaya thank you sir sa lessons mo, lab ka namin sir :D</p>
+<p>Happy Teacher's Day, po!
+</p>
+<p class="signature">
+Coded by Adrielle
+</p>
+<button class="back-button" onclick="goBack()">
+< back
+</button>
+</div>
+</div>
+<!-- JAVASCRIPT -->
+<script>
+function openLetter() {
+document.getElementById("firstPage").style.display="none";
+document.getElementById("secondPage").style.display="block";
+}
+function goBack() {
+document.getElementById("secondPage").style.display="none";
+document.getElementById("firstPage").style.display="block";
+}
+</script>
+</body>
+</html>
